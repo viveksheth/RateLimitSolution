@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "33fcce63-f045-419f-9287-6d9a11c109c4",
+		"name": "RateLimitingSolution",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RateLimit Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/health",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Client Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/generateClientId",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"generateClientId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Employee data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getEmployeeData/1921681104",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getEmployeeData",
+						"1921681104"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
