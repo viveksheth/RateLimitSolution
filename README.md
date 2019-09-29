@@ -2,7 +2,7 @@
 
 This is Springboot REST API with Rate limiting enabled. 
 
-#####RateLimting Criteria: 
+#### RateLimting Criteria: 
 REST API Endpoint `/getEmployeeData/{ClientId}` is enabaled with rate limiting. Rate limiter keeps track of requests and limits it
 such that a requester can only make 100 requests per hour. After the limit has been reached, return a 429 with the text `Too many requests. Please try again after #{n} seconds`.
 
