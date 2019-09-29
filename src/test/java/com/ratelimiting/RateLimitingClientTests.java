@@ -32,23 +32,15 @@ public class RateLimitingClientTests {
         for(int i=1; i<=reqCount; i++)
         {
             restTemplate = new RestTemplate();
-
             try
             {
                 response = restTemplate.getForEntity(API_URI,String.class);
-
             }
             catch (HttpClientErrorException exception)
             {
                     ++count;
-
             }
-
         }
-
         System.out.println("\n\nRejected Requests: " + count);
-
     }
-
-
 }

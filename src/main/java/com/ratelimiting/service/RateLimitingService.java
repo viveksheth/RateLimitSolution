@@ -3,5 +3,5 @@ package com.ratelimiting.service;
 public interface RateLimitingService {
 
     boolean isRequestAllowed(String clientId);
-    Long nextAvailableTime();
+    long nextAvailableTime();
 }

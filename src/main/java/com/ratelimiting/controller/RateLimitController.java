@@ -38,14 +38,12 @@ public class RateLimitController {
     @Autowired
     private RateLimitingServiceImpl rateLimitingServiceImpl;
 
-
     public ServletContext getServletContext() {
         return servletContext;
     }
 
     @RequestMapping("/health")
     public ResponseEntity<?> checkHealth() {
-        employeeServiceImpl.loadEmployeeData();
         return new ResponseEntity("RateLimiter API health check is successful", HttpStatus.OK);
     }
 

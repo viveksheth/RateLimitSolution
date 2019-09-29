@@ -11,7 +11,7 @@ such that a requester can only make 100 requests per hour. After the limit has b
 - Apache Maven 3.x or above 
 
 ### Endpoints
-
+`/health` - Application Health Check
 `/generateClientId` - Uses clientIP and converts in to ClientID 
 `/getEmployeeData/{ClientId}` - Checks rate limiting criteria per client and returns sample employee data 
 

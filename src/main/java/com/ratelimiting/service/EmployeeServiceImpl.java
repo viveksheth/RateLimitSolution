@@ -17,6 +17,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     private List<Employee> employeeList = new ArrayList<Employee>();
 
+    public EmployeeServiceImpl(List<Employee> employeeList) {
+        this.employeeList = employeeList;
+    }
 
     public void loadEmployeeData()
     {
@@ -38,6 +41,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         logger.info("loaded employee data successfully!");
 
+    }
+
+    public void setEmployeeList(List<Employee> employeeList) {
+        this.employeeList = employeeList;
     }
 
     @Override
