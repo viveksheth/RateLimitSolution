@@ -1,4 +1,4 @@
-##RateLimitSolution
+## RateLimitSolution
 
 This is Springboot REST API with Rate limiting enabled. 
 
@@ -6,7 +6,7 @@ This is Springboot REST API with Rate limiting enabled.
 REST API Endpoint `/getEmployeeData/{ClientId}` is enabaled with rate limiting. Rate limiter keeps track of requests and limits it
 such that a requester can only make 100 requests per hour. After the limit has been reached, return a 429 with the text `Too many requests. Please try again after #{n} seconds`.
 
-###Prerequisite
+### Prerequisite
 - Java 1.8 or higher
 - Apache Maven 3.x or above 
 
