@@ -19,7 +19,7 @@ such that a requester can only make 100 requests per hour. After the limit has b
 
 1. Clone repository to your local machine. 
 ```
-https://github.com/viveksheth/RateLimitSolution.git
+git clone https://github.com/viveksheth/RateLimitSolution.git
 ```
 2. Open terminal and navigate to cloned library. Run following command: 
 ```
